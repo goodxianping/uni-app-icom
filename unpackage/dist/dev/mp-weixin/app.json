@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "云浮便民社区",
+    "navigationBarBackgroundColor": "#0183FF",
+    "backgroundColor": "#0183FF",
+    "navigationStyle": "default"
+  },
+  "usingComponents": {}
+}
