@@ -3,13 +3,13 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "云浮便民社区"
+				"navigationBarTitleText": "智慧社区"
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "云浮便民社区",
+		"navigationBarTitleText": "智慧社区",
 		"navigationBarBackgroundColor": "#0183FF",
 		"backgroundColor": "#0183FF",
 		"navigationStyle":"default"

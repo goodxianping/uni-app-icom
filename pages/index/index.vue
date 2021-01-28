@@ -137,6 +137,59 @@
 					</view>
 				</view>
 			</view>
+			<view class="activitys">
+				<view class="activitys-head">
+					<text>社区活动</text>
+					<view><text>更多</text>
+						<image src="../../static/img/arrow_gray.png"></image>
+					</view>
+				</view>
+				<view class="activitys-list">
+					<view v-for="(item, index) in activities" :key="index" class="activitys-list-item">
+						<view class="activitys-list-item-top">
+							<image class="activitys-list-item-top-pic" :src="item.pic" mode="aspectFill"></image>
+							<text class="activitys-list-item-top-title">{{item.title}}</text>
+							<text class="activitys-list-item-top-deadline">活动截止：{{item.deadline}}</text>
+						</view>
+						<view class="activitys-list-item-bottom">
+							<view class="activitys-list-item-bottom-left">
+								<view class="activitys-list-item-bottom-avatar">
+									<image src="http://10.10.23.119/avatar1.png"></image>
+									<image src="http://10.10.23.119/avatar2.png"></image>
+									<image src="http://10.10.23.119/avatar3.png"></image>
+								</view>
+								<text class="activitys-list-item-bottom-participant">{{item.participant}}人参与</text>
+								<image class="activitys-list-item-bottom-thumb" src="../../static/img/thumb_selected.png"></image>
+								<text class="activitys-list-item-bottom-thumbnum">{{item.thumbs}}</text>
+							</view>
+							<button type="primary">
+								<text>去参与</text>
+							</button>
+						</view>
+						<image v-show="item.end" class="activitys-list-item-imageover" src="http://10.10.23.119/activity_over.png" mode="aspectFill"></image>
+						<text class="activitys-list-item-online">{{item.online?'线上活动':'线下活动'}}</text>
+					</view>
+				</view>
+			</view>
+			<view class="news">
+				<view class="news-head">
+					<text>社区新闻</text>
+					<view><text>更多精彩</text>
+						<image src="../../static/img/arrow_gray.png"></image>
+					</view>
+				</view>
+				<view class="news-list">
+					<view v-for="(item, index) in news" :key="index" class="news-list-item">
+						<view class="news-list-item-left">
+							<image :src="item.pic" mode="aspectFill"></image>
+						</view>
+						<view class="news-list-item-right">
+							<text>{{item.title}}</text>
+							<text>{{item.date}}</text>
+						</view>
+					</view>
+				</view>
+			</view>
 			<view class="scroll-bottom" style="height: 24rpx;"></view>
 		</scroll-view>
 	</view>
@@ -212,6 +265,40 @@
 						pic: 'http://10.10.23.119/mall-tuan.png'
 					}
 				],
+				activities: [{
+						title: '2020智慧社区最萌宠物摄影大赛',
+						deadline: '2020年2月10日',
+						participant: 33,
+						thumbs: 345,
+						end: false,
+						pic: 'http://10.10.23.119/activity_1.png',
+						online: true
+					},
+					{
+						title: '2020智慧社区最萌宠物摄影大赛',
+						deadline: '2020年2月10日',
+						participant: 999,
+						thumbs: 8888,
+						end: true,
+						pic: 'http://10.10.23.119/activity_2.png',
+						online: false
+					}
+				],
+				news: [{
+						title: '国家5Ａ级旅游景区-濠河风景区桃花吐妍, 国家5Ａ级旅游景区-濠河风景区桃花吐妍',
+						date: '2021年2月10日',
+						pic: 'http://10.10.23.119/new1.png'
+					},
+					{
+						title: '新鲜事!全方位探访城关区首家小区生活垃圾分拣中心',
+						date: '2021年1月10日',
+						pic: 'http://10.10.23.119/new2.png'
+					}, {
+						title: '西安市5月份共37.1万名学生陆续开学复课',
+						date: '2020年12月10日',
+						pic: 'http://10.10.23.119/new3.png'
+					}
+				],
 				changeIndicatorDots(e) {
 					this.indicatorDots = !this.indicatorDots
 				},
@@ -231,10 +318,10 @@
 		},
 		methods: {
 			upper: function(e) {
-				console.log(e)
+				//console.log(e)
 			},
 			lower: function(e) {
-				console.log(e)
+				//console.log(e)
 			},
 			scroll: function(e) {
 				//console.log(e)

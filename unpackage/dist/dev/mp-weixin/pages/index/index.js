@@ -279,6 +279,59 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -349,6 +402,40 @@ var _default =
         pic: 'http://10.10.23.119/mall-tuan.png' }],
 
 
+      activities: [{
+        title: '2020智慧社区最萌宠物摄影大赛',
+        deadline: '2020年2月10日',
+        participant: 33,
+        thumbs: 345,
+        end: false,
+        pic: 'http://10.10.23.119/activity_1.png',
+        online: true },
+
+      {
+        title: '2020智慧社区最萌宠物摄影大赛',
+        deadline: '2020年2月10日',
+        participant: 999,
+        thumbs: 8888,
+        end: true,
+        pic: 'http://10.10.23.119/activity_2.png',
+        online: false }],
+
+
+      news: [{
+        title: '国家5Ａ级旅游景区-濠河风景区桃花吐妍, 国家5Ａ级旅游景区-濠河风景区桃花吐妍',
+        date: '2021年2月10日',
+        pic: 'http://10.10.23.119/new1.png' },
+
+      {
+        title: '新鲜事!全方位探访城关区首家小区生活垃圾分拣中心',
+        date: '2021年1月10日',
+        pic: 'http://10.10.23.119/new2.png' },
+      {
+        title: '西安市5月份共37.1万名学生陆续开学复课',
+        date: '2020年12月10日',
+        pic: 'http://10.10.23.119/new3.png' }],
+
+
       changeIndicatorDots: function changeIndicatorDots(e) {
         this.indicatorDots = !this.indicatorDots;
       },
@@ -368,10 +455,10 @@ var _default =
   },
   methods: {
     upper: function upper(e) {
-      console.log(e);
+      //console.log(e)
     },
     lower: function lower(e) {
-      console.log(e);
+      //console.log(e)
     },
     scroll: function scroll(e) {
       //console.log(e)
