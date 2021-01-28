@@ -48,7 +48,7 @@
 					</view>
 					<view class="navi-services-list-item">
 						<image src="../../static/img/navi_mall_home.png"></image>
-						<text>金居商城</text>
+						<text>社区商城</text>
 					</view>
 				</view>
 			</view>
@@ -213,7 +213,7 @@
 					indColor: '#80FFFFFF',
 					indActColor: '#FFFFFF'
 				},
-				adImgs: ['../../static/img/1.png', '../../static/img/2.png', '../../static/img/3.png'],
+				adImgs: ['../../static/img/2.png', '../../static/img/3.png'],
 				mallTimeSales: [{
 					title: '一级黄冠梨 净重10斤 梨子今天在做小程序的时候遇到了这个问题',
 					price: 44.9,
